@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .top-left{
+            float: left;
+            margin: 15px 10px 10px 15px;
+            font-size: 14px;
+        }
+        .top-right{
+            float: right;
+            margin: 15px 15px 10px 10px;
+            font-size: 14px;
+        }
+        #dots{
+            margin-top: -10px;
+        }
+        #sign-in{
+            margin-top: -5px;
+            background-color: dodgerblue;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 2px;
+        }
+        a:link{
+            color: #595959;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #595959;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #595959;
+            text-decoration: underline;
+        }
+        a:visited{
+            color: #595959;
+            text-decoration: none;
+        }
+        div{
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            border-style: solid;
+            border-width: 2px 1px;
+            border-radius: 25px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-color: #DCDCDC;
+        }
+        div:hover{
+            border-width: 0px 1px 2px 1px;
+        }
+        div:focus{
+            border-width: 0px 1px 2px 1px;
+        }
+        #search{
+            padding: 12px 180px 8px 160px;
+            border: none;
+        }
+        input:focus{
+            outline: none;
+        }
+        #logo{
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50%, -50%);
+        }
+        .search-buttons{
+            border: none;
+            font-size: 16px;
+            color: #595959;
+            padding: 8px 14px;
+        }
+        .search-buttons:hover{
+            border: solid;
+            border-width: 1px;
+            border-color: #808080;
+            border-radius: 4px;
+        }
+        #google-search{
+            position: absolute;
+            left: 45%;
+            top: 42%;
+            transform: translate(-50%, -50%);
+        }
+        #lucky{
+            position: absolute;
+            left: 55%;
+            top: 42%;
+            transform: translate( -50%, -50%);
+        }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: solid;
+            border-color: #DCDCDC;
+            border-width: 1px;
+        }
+        .bottom-left{
+            float: left;
+            font-size: 15px;
+            margin: 10px 20px;
+        }
+        .bottom-right{
+            float: right;
+            font-size: 15px;
+            margin: 10px 20px;
+        }
+    </style>
+<nav>
+    <ul>
+        <li class="top-left"><a href="#" >About</a></li>
+        <li class="top-left"><a href="#" >Store</a></li>
+        <li class="top-right"><a href="#" ><button type="button" id="sign-in">Sign In</button></a></li>
+        <li class="top-right"><a href="#" ><img id="dots"src="/home/dylan/Pictures/dots.png"></a></li>
+        <li class="top-right"><a href="#" >Gmail</a></li>
+        <li class="top-right"><a href="#" >Images</a></li>
+    </ul>
+</nav>
+<body>
+    <img id="logo" src="/home/dylan/Pictures/google2.jpg">
+    <button class="search-buttons" id="google-search" type="button">Google Search</button>
+    <button class="search-buttons" id="lucky" type="button">I'm Feeling Lucky</button>
+    <div>
+        <label for="search-bar"><img src="/home/dylan/Pictures/magnifying2.png"></label>
+        <input type="text" name="search-bar" id="search">
+        <a href="#"><img src="/home/dylan/Pictures/microphone2.png"> </a>
+    </div>
+</body>
+<nav class="footer">
+    <ul>
+        <li class="bottom-left"><a href="#">Advertising</a> </li>
+        <li class="bottom-left"><a href="#">Business</a></li>
+        <li class="bottom-left"><a href="#">How Search Works</a></li>
+        <li class="bottom-right"><a href="#">Settings</a></li>
+        <li class="bottom-right"><a href="#">Terms</a></li>
+        <li class="bottom-right"><a href="#">Privacy</a></li>
+    </ul>
+</nav>
+</html>
